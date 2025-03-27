@@ -1,0 +1,72 @@
+
+
+/* Form Styling */
+.product-form {
+    width: 450px; /* Form ki width badhayi */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    font-family: Arial, sans-serif;
+    color: white; /* Text color white kiya taki visible rahe */
+}
+.product-form select {
+    color: black !important;  /* Dropdown text black karne ke liye */
+    background-color: rgb(255, 23, 23);  /* Ensure background white ho */
+}
+.product-form label, 
+.product-form select {
+    color: black !important;
+}
+
+.img1 {    
+    background: url('../users/assets/images/home-03/slide-01.jpg') no-repeat center center/cover; 
+    min-height: 100vh; /* Puri screen cover kare */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Labels */
+.product-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Align All Radio Buttons in One Line */
+.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Proper Alignment for Radio Buttons */
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Input Fields */
+.product-form input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+.product-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e73918;
+   
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
