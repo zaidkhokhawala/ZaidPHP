@@ -36,7 +36,7 @@ https://templatemo.com/tm-591-villa-agency
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
+  <!-- ***** Preloader Start *****
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -46,7 +46,7 @@ https://templatemo.com/tm-591-villa-agency
         <span></span>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- ***** Preloader End ***** -->
 
   <div class="sub-header">
@@ -131,7 +131,7 @@ https://templatemo.com/tm-591-villa-agency
                     </li>
                     
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact Us</a>
+                        <a href="manage_contact" class="nav-link">Contact Us</a>
                     </li>
                 </ul>
             </div>

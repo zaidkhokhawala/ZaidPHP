@@ -1,0 +1,350 @@
+ /* Navbar links black & hover orange */
+  .nav-link {
+    color: black !important;
+font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+.nav-link:hover {
+    color:  #f35525 !important;
+}
+
+/* Dropdown links black & hover #f35525 */
+.dropdown-menu .dropdown-item {
+  
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f35525 !important;
+    color: white !important;
+}
+
+/* Dropdown hover*/
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffffdc;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(145deg, #f35525, #c03a1a);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.nav li a {
+    font-size: 15px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    letter-spacing: .25px;
+  }
+  .header-area {
+    display: flex;
+    align-items: center;  /* Vertically center */
+    justify-content: center;  /* Horizontally center */
+    height: 100px;  /* Adjust height */
+    background-color: #f8f9fa; /* Optional */
+}
+.nav{
+    margin-left: -110px;
+}
+
+
+
+/* General Styles */
+
+
+/* Dashboard Container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 3D Effect */
+    color: #f35525;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Dashboard Cards */
+.dashboard-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-card {
+    flex: 1;
+    min-width: 250px;
+    background: linear-gradient(145deg, #ffffff, #e3e3e3); /* 3D Gradient */
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5); /* 3D Neomorphism */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.6);
+}
+
+.dashboard-card i {
+    font-size: 40px;
+    color: #f35525;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dashboard-card:hover i {
+    transform: rotateY(360deg);
+}
+
+.dashboard-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.dashboard-card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Progress Section */
+.progress-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.progress-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.progress {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 8px;
+    height: 25px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #f35525, #ff7043);
+    animation: progressLoad 2s ease-in-out;
+}
+
+/* Table Section */
+.table-section {
+    margin-top: 30px;
+}
+
+.table-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: linear-gradient(145deg, #ffffff, #e3e3e3);
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.table thead {
+    background-color: #f35525;
+    color: white;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:hover {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    transition: background 0.3s ease;
+}
+
+/* Task Section */
+.task-section {
+    margin-top: 30px;
+}
+
+.task-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.task-list li:hover {
+    transform: scale(1.05);
+}
+
+/* Analytics Section */
+.analytics-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #e3e3e3);
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.analytics-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.analytics-section p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes progressLoad {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 75%;
+    }
+}
+
+
+
+/* manage products table design  */
+.card {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+}
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: all 0.3s ease-in-out;
+}
+
+.property-img {
+    width: 70px;
+    height: 50px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.property-img:hover {
+    transform: scale(2);
+}
+
+.btn-sm {
+    font-size: 14px;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.action-btn {
+    margin-right: 5px;
+}
+
+.btn-warning {
+    background-color: #ffbe00;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover,
+.btn-warning:hover,
+.btn-danger:hover {
+    opacity: 0.85;
+}
+
