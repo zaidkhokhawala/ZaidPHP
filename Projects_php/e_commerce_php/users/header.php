@@ -34,7 +34,7 @@
     </div>
     <!-- Preloader end -->
     <header id="header" class="header-area style-01 layout-03">
-        <div class="header-top bg-main hidden-xs">
+        <div class="header-top bg-main hidden-xs" >
             <div class="container">
                 <div class="top-bar left">
                     <ul class="horizontal-menu">

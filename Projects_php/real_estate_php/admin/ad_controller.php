@@ -34,76 +34,65 @@ model::__construct();
                 break;
 
                 case '/add_product':
-                    case '/add_product':
-                        // Fetch categories from the database
-                        $cat_arr = $this->select('categories');
-                        // Include the add_product form view and pass categories_arr to it
-
-
-                       // Check if the form is submitted
-if (isset($_REQUEST['submit'])) {
-    // Get the form data
-    $product_name = $_REQUEST['product_name'];
-    $category_name = $_REQUEST['category_name'];  // This is the category ID now
-    $price = $_REQUEST['price'];
-    $home_number = $_REQUEST['home_number'];
-    $area = $_REQUEST['area'];
-    $city = $_REQUEST['city'];
-    $pincode = $_REQUEST['pincode'];
-    $country = $_REQUEST['country'];
-    $bedrooms = $_REQUEST['bedrooms'];
-    $bathrooms = $_REQUEST['bathrooms'];
-    $property_area = $_REQUEST['property_area'];
-    $floor = $_REQUEST['floor'];
-    $parking = $_REQUEST['parking'];
-    
-    // Image upload for the product
-    $properties_img_name = $_FILES['img']['name'];
-    $path = '../uploads/properties/' . $properties_img_name; // Correct path for properties images
-    $temp_img_name = $_FILES['img']['tmp_name'];
-    
-    if (move_uploaded_file($temp_img_name, $path)) {
-        // Prepare the data to insert into the 'properties' table
-        $product_arr = array(
-            "category_id" => $category_name, // Store category ID (not name) in the database
-            "image" => $properties_img_name,  // Image name to store in the database
-            "price" => $price,
-            "home_number" => $home_number,
-            "area" => $area,
-            "city" => $city,
-            "pincode" => $pincode,
-            "country" => $country,
-            "bedrooms" => $bedrooms,
-            "bathrooms" => $bathrooms,
-            "area_m2" => $property_area,
-            "floor" => $floor,
-            "parking" => $parking,
-            "category_name" => $product_name // Optional if you want to store the name of the product
-        );
-
-        // Insert data into the 'properties' table
-        $push_insert = $this->insert('properties', $product_arr);
-
-        // Check if insertion was successful
-        if ($push_insert) {
-            echo "<script>alert('Property added successfully');</script>";
-        } else {
-            echo "<script>alert('Failed to add property');</script>";
-        }
-    } else {
-        echo "<script>alert('Image upload failed');</script>";
-    }
-}
-
-
-                        include_once('add_product.php');
-                        break;
-                    
-                 
+                    if (isset($_POST['submit'])) {
+                        // Get form data
+                        $category_name = $_POST['category'];
+                        $price = $_POST['price'];
+                        $home_number = $_POST['home_number'];
+                        $area = $_POST['area'];
+                        $city = $_POST['city'];
+                        $pincode = $_POST['pincode'];
+                        $country = $_POST['country'];
+                        $bedrooms = $_POST['bedrooms'];
+                        $bathrooms = $_POST['bathrooms'];
+                        $property_area = $_POST['property_area'];
+                        $floor = $_POST['floor'];
+                        $parking = $_POST['parking'];
+                        
+                        // Handle image upload
+                        $image_name = $_FILES['property_img']['name'];
+                        $image_temp_name = $_FILES['property_img']['tmp_name'];
+                        $image_path = "../uploads/properties/" . $image_name;
+                        
+                        // Move uploaded image to desired directory
+                        if (move_uploaded_file($image_temp_name, $image_path)) {
+                            // Prepare data for database insertion
+                            $product_data = array(
+                                "category_name" => $category_name,
+                                "price" => $price,
+                                "home_number" => $home_number,
+                                "area" => $area,
+                                "city" => $city,
+                                "pincode" => $pincode,
+                                "country" => $country,
+                                "bedrooms" => $bedrooms,
+                                "bathrooms" => $bathrooms,
+                                "property_area" => $property_area,
+                                "floor" => $floor,
+                                "parking" => $parking,
+                                "image" => $image_name
+                            );
+                            
+                            // Insert into 'properties' table
+                            $insert_product = $this->insert('properties', $product_data);
+                            
+                            if ($insert_product) {
+                                echo "<script>alert('Product added successfully!');</script>";
+                            } else {
+                                echo "<script>alert('Error: Could not add product.');</script>";
+                            }
+                        } else {
+                            echo "<script>alert('Error uploading image.');</script>";
+                        }
+                    }
                 
-                    // Include the add_product form view
+                    // Fetch categories for dropdown
+                    $cat_arr = $this->select('categories');
+                    
+                    // Include the add_product form view and pass categories data
                     include_once('add_product.php');
                     break;
+                
 
             case '/add_category':
               if (isset($_REQUEST['submit'])) {

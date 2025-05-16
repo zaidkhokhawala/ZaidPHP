@@ -859,6 +859,8 @@ body{
 .header-top .top-bar{
     max-width: 50%;
     float: left;
+    
+   
 }
 .header-top .right{
     float: right;
@@ -877,7 +879,7 @@ body{
     display: inline-block;
 }
 .header-top .top-bar .horizontal-menu a{
-    color: #ffffff;
+    color: #fd0000;
     font-size: 14px;
 }
 .header-top .top-bar .horizontal-menu a:hover{

@@ -46,7 +46,8 @@
                                 <?php foreach ($product_data as $P_data) { ?>
                                     <tr>
                                         <td><?php echo $P_data['id']; ?></td>
-                                        <td><img src="uploads/<?php echo $P_data['image']; ?>" class="property-img" width="50"></td>
+
+                                        <td><img src="../uploads/properties/<?php echo $P_data['image']; ?>" class="property-img" width="50"></td>
                                         <td><?php echo $P_data['category_name']; ?></td>
                                         <td>$ <?php echo $P_data['price']; ?></td>
                                         <td><?php echo $P_data['home_number']; ?></td>
