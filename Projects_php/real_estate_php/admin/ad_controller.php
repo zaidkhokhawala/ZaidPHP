@@ -117,7 +117,7 @@ model::__construct();
                 break;
 
             case '/manage_category':
-                $cat_data=$this->select('categories');
+                $cat_data =$this->select('categories');
                 include_once('manage_category.php');
                 break;
 
