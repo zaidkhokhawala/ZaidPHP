@@ -1,51 +1,57 @@
 # Object-Oriented Programming (OOP) aur Uske 4 Principles
 
-## Object-Oriented Programming (OOP) kya hai?  
+## Object-Oriented Programming (OOP) kya hai?
+
 OOP ek programming style hai jisme hum real-world cheezon (objects) ko model karte hain. Isme data aur functions ko ek saath **objects** ke andar rakhte hain. Ye programming ko zyada organized, reusable, aur easy to manage banata hai.
 
 ---
 
 ## OOP ke 4 main principles:
 
-### 1. Encapsulation 
-- Matlab data (variables) aur functions (methods) ko ek unit (class/object) me band karna.  
-- Isse data safe rehta hai, kyunki bahar se directly data ko access nahi kar sakte, sirf class ke methods ke through hi kar sakte hain.  
+### 1. Encapsulation
+
+- Matlab data (variables) aur functions (methods) ko ek unit (class/object) me band karna.
+- Isse data safe rehta hai, kyunki bahar se directly data ko access nahi kar sakte, sirf class ke methods ke through hi kar sakte hain.
 - **Example:** Aap apne phone ke andar data store karte ho, lekin bahar wale sirf buttons daba ke control kar sakte hain, phone ke internal data ko directly chhed nahi sakte.
 
-### 2. Inheritance 
-- Matlab ek class apni properties aur methods doosri class ko de sakti hai, yani ek class dusri class se traits le sakti hai.  
-- Isse code reusability badhti hai, naye features easily add kar sakte hain.  
+### 2. Inheritance
+
+- Matlab ek class apni properties aur methods doosri class ko de sakti hai, yani ek class dusri class se traits le sakti hai.
+- Isse code reusability badhti hai, naye features easily add kar sakte hain.
 - **Example:** Agar "Car" class hai, toh "ElectricCar" class "Car" se properties le sakti hai aur apne special features bhi add kar sakti hai.
 
-### 3. Polymorphism   
-- Matlab ek function ya method alag-alag tarike se behave kar sakta hai depending on object.  
-- Simple shabdon me, same naam ke function ke alag implementations ho sakte hain.  
+### 3. Polymorphism
+
+- Matlab ek function ya method alag-alag tarike se behave kar sakta hai depending on object.
+- Simple shabdon me, same naam ke function ke alag implementations ho sakte hain.
 - **Example:** "draw()" function ek shape ke liye circle draw karega, aur dusre shape ke liye square. Dono ke function ka naam same hai, lekin kaam alag hai.
 
-### 4. Abstraction 
-- Matlab unnecessary details ko chhupa ke sirf important cheezein dikhana.  
-- User ko sirf essential features dikhte hain, andar ka complex logic hide hota hai.  
+### 4. Abstraction
+
+- Matlab unnecessary details ko chhupa ke sirf important cheezein dikhana.
+- User ko sirf essential features dikhte hain, andar ka complex logic hide hota hai.
 - **Example:** Aap car chala rahe ho, aapko engine kaise kaam karta hai pata nahi, bas steering, accelerator aur brake use karte ho.
 
-# PHP me Class ka Structure 
+# PHP me Class ka Structure
 
 PHP me **Class** ek design hoti hai jisse hum real-world cheezon ko model karte hain. Class ke andar **Properties** (variables) aur **Methods** (functions) hote hain, jo milke object ka data aur kaam define karte hain.
 
 "Class ek design hoti hai jo real world ki cheezon ko program ke andar dikhati hai. Is design ke andar hum properties (jo data hota hai) aur methods (jo kaam hote hain) define karte hain. Jab hum class se object banate hain, to wo us design ka ek alag example hota hai jisme apna alag data hota hai."
 
-
 ---
 
 ## Class Structure ke Important Parts:
 
-1. Properties  
-- Properties wo variables hote hain jo class ke andar banaye jate hain.  
-- Ye object ke features (data) ko batate hain.  
+1. Properties
+
+- Properties wo variables hote hain jo class ke andar banaye jate hain.
+- Ye object ke features (data) ko batate hain.
 - Properties ke saath access type (jaise `public`, `private`, `protected`) lagate hain jo batata hai ki data ko kaun access kar sakta hai.
 
- 2. Methods  
-- Methods functions hote hain jo class ke andar likhe jate hain.  
-- Ye object ke actions (kaam) ko batate hain.  
+2.  Methods
+
+- Methods functions hote hain jo class ke andar likhe jate hain.
+- Ye object ke actions (kaam) ko batate hain.
 - Methods se hum properties ko badal sakte hain ya koi kaam kar sakte hain.
 
 ---
@@ -71,8 +77,6 @@ class Car {
 }
 ?>
 
-
-
 # Object kya hota hai OOP me? (PHP ke context me)
 
 ---
@@ -88,7 +92,7 @@ Matlab, class ek design hoti hai, aur object us design ka ek actual item hota ha
 
 PHP me jab hum class banate hain, to wo sirf ek design hoti hai. Us class se jab hum **`new` keyword** ka use karke object banate hain, us process ko **instantiation** kehte hain.
 
-```php
+````php
 <?php
 class Car {
     public $color;
@@ -119,7 +123,7 @@ $car2->startEngine();  // Output: Engine started for Toyota
 
 **Inheritance** ek Object-Oriented Programming (OOP) ka concept hai jisme ek class (called **child** or **subclass**) kisi dusri class (called **parent** or **superclass**) ke properties aur methods ko **inherit** karti hai.
 
-➡️ Iska matlab:  
+➡️ Iska matlab:
 Child class Parent class ke saare functions aur variables ka use kar sakti hai bina dobara likhe.
 
 ---
@@ -225,7 +229,7 @@ $calc = new Calculator();
 echo $calc->add(5, 10);        // Output: 15
 echo $calc->add(1, 2, 3);      // Output: 6
 
-🧠 Abstraction in PHP 
+🧠 Abstraction in PHP
 Abstraction OOP ka ek important concept hai jiska matlab hota hai:
 "Sirf important cheezon ko dikhana aur unnecessary details ko hide karna."
 
@@ -247,8 +251,7 @@ Ek abstract class me normal methods aur properties bhi ho sakti hain.
 
 ✅ Example:
 php
-Copy
-Edit
+
 abstract class Animal {
     abstract public function makeSound(); // no body
 
@@ -273,8 +276,7 @@ PHP me class multiple interfaces implement kar sakti hai (ye ek tarah ka multipl
 
 ✅ Example:
 php
-Copy
-Edit
+
 interface Shape {
     public function area();
     public function perimeter();
@@ -321,8 +323,7 @@ Isse code zyada clean aur efficient ho jata hai.
 
 4. Constructor ka basic syntax
 php
-Copy
-Edit
+
 class ClassName {
     public function __construct() {
         // Initialization code
@@ -335,8 +336,7 @@ Isse object ko customize karna easy hota hai.
 
 6. Example ke saath samjho:
 php
-Copy
-Edit
+
 <?php
 class Mobile {
     public $brand;
@@ -370,13 +370,13 @@ Agar constructor nahi likhenge, to PHP default constructor use karega jo kuch na
 
 Constructor me hum public, private, ya protected bhi use kar sakte hain (access modifiers).
 
-# Destructor in PHP - Simple Hinglish Explanation
+# Destructor in PHP -  
 
 ---
 
 ### Destructor kya hota hai?
 
-Destructor bhi ek special method hota hai jo class ke andar define kiya jata hai. Jab object apna kaam khatam kar leta hai ya program se delete ho jata hai, tab destructor automatically call hota hai. 
+Destructor bhi ek special method hota hai jo class ke andar define kiya jata hai. Jab object apna kaam khatam kar leta hai ya program se delete ho jata hai, tab destructor automatically call hota hai.
 
 Iska kaam hota hai **cleanup** karna, jaise memory free karna ya files close karna, ya koi aise kaam jo object ke khatam hone par karna zaroori ho.
 
@@ -390,16 +390,16 @@ PHP me destructor ka naam `__destruct()` hota hai. Is method ko hum khud define 
 
 ### Destructor kab call hota hai?
 
-- Jab object ka scope khatam ho jata hai, matlab jab wo object aur use nahi ho raha.  
-- Jab script ka execution end hota hai.  
+- Jab object ka scope khatam ho jata hai, matlab jab wo object aur use nahi ho raha.
+- Jab script ka execution end hota hai.
 - Jab hum explicitly `unset()` function se object ko destroy karte hain.
 
 ---
 
 ### Destructor ka use kyon karte hain?
 
-- Resource ko release karne ke liye, jaise file handles, database connections.  
-- Memory clean karne ke liye.  
+- Resource ko release karne ke liye, jaise file handles, database connections.
+- Memory clean karne ke liye.
 - Object ke end me kuch final task karne ke liye.
 
 ---
@@ -420,7 +420,7 @@ $obj = new Test();
 unset($obj); // Isse object destroy hoga aur destructor call hoga
 
 
-# Magic Methods in PHP - Hinglish Explanation
+# Magic Methods in PHP - 
 
 ---
 
@@ -434,36 +434,35 @@ Inka use hum apni class ke behavior ko customize karne ke liye karte hain, bina 
 
 ### 🔑 Commonly Used Magic Methods:
 
-1. **`__construct()`**  
+1. **`__construct()`**
    Ye constructor method hota hai. Jab bhi class ka object banta hai, ye method automatic call hota hai. Isme hum object ki initialization karte hain.
 
    ```php
    class Car {
        public $color;
-       
+
        public function __construct($color) {
            $this->color = $color;
            echo "Car color set to " . $this->color;
        }
    }
-   
+
    $car1 = new Car("Red");  // Output: Car color set to Red
 __get($property)
 Jab hum class ke kisi inaccessible (private/protected ya non-existing) property ko access karte hain, to ye method automatic call hota hai. Isse hum custom logic laga sakte hain property ko access karne ke liye.
 
 php
-Copy
-Edit
+
 class Person {
     private $data = [];
-    
+
     public function __get($name) {
         if(array_key_exists($name, $this->data)) {
             return $this->data[$name];
         }
         return "Property '$name' not found";
     }
-    
+
     public function __set($name, $value) {
         $this->data[$name] = $value;
     }
@@ -487,7 +486,7 @@ __isset($name) : Jab isset() function inaccessible property par call hota hai.
 
 __unset($name) : Jab unset() inaccessible property par call hota hai.
 
-# Scope Resolution Operator (::) in PHP - Hinglish Explanation
+# Scope Resolution Operator (::) in PHP - 
 
 ---
 
@@ -501,13 +500,13 @@ Ye operator batata hai ki hum kis class ka koi property ya method use kar rahe h
 
 ## Jab hum use karte hain?
 
-1. **Static properties aur methods ko access karne ke liye**  
+1. **Static properties aur methods ko access karne ke liye**
    Jab koi property ya method `static` declare hota hai, to hum usse directly class ke naam ke saath `::` operator se access karte hain.
 
-2. **Constants ko access karne ke liye**  
+2. **Constants ko access karne ke liye**
    Class ke andar defined constants ko bhi `::` se access kiya jaata hai.
 
-3. **Parent class ke methods ko call karne ke liye**  
+3. **Parent class ke methods ko call karne ke liye**
    Agar child class me parent class ke method ko call karna ho, to hum `parent::methodName()` likhte hain.
 
 ---
@@ -535,8 +534,7 @@ echo MathHelper::square(5);      // Output: 25
 echo MathHelper::VERSION;        // Output: 1.0
 Parent class method call karna (Inheritance me):
 php
-Copy
-Edit
+
 class ParentClass {
     public static function greet() {
         echo "Hello from Parent!";
@@ -556,7 +554,7 @@ ChildClass::greet();
 
 
 
-# Traits in PHP - Hinglish Explanation
+# Traits in PHP - 
 
 ---
 
@@ -570,9 +568,9 @@ Iska matlab hai, agar aapko ek jaisa code bar-bar likhna hai different classes m
 
 ## Traits ka purpose kya hai?
 
-- Code duplication kam karna  
-- Multiple inheritance ki tarah kaam karna (PHP me multiple inheritance nahi hota, traits se ye problem solve hoti hai)  
-- Code ko modular aur clean rakhna  
+- Code duplication kam karna
+- Multiple inheritance ki tarah kaam karna (PHP me multiple inheritance nahi hota, traits se ye problem solve hoti hai)
+- Code ko modular aur clean rakhna
 
 ---
 
@@ -621,8 +619,7 @@ Matlab koi bhi easily isko use kar sakta hai.
 Example:
 
 php
-Copy
-Edit
+
 class Car {
     public $color;  // Public property
     public function drive() {
@@ -643,14 +640,13 @@ Inherited classes (child classes) aur bahar se access nahi kar sakte.
 Example:
 
 php
-Copy
-Edit
+
 class Car {
     private $engineNumber;  // Private property
     private function startEngine() {
         echo "Engine start hua";
     }
-    
+
     public function startCar() {
         $this->startEngine();  // Private method class ke andar se accessible hai
     }
@@ -669,8 +665,7 @@ Bahar se (outside) direct access nahi hota.
 Example:
 
 php
-Copy
-Edit
+
 class Car {
     protected $model;
     protected function honk() {
@@ -682,7 +677,7 @@ class SportsCar extends Car {
     public function showModel() {
         echo $this->model;  // Child class ke andar protected property accessible
     }
-    
+
     public function honkHorn() {
         $this->honk();  // Child class ke andar protected method accessible
     }
@@ -706,8 +701,7 @@ Code maintainability: Class ke andar ki cheeze safe rakhna, aur bahar ki class u
 
 Example with all 3:
 php
-Copy
-Edit
+
 class Person {
     public $name;          // Sab access kar sakte hain
     protected $age;        // Sirf class aur child class access kar sakti hai
@@ -741,8 +735,7 @@ Type hinting PHP me ek feature hai jisse hum function ya method ke parameters me
 
 Example:
 php
-Copy
-Edit
+
 function addNumbers(int $a, int $b) {
     return $a + $b;
 }
@@ -771,8 +764,7 @@ Agar kisi method ko final declare karte hain, to wo method child classes me over
 
 Example:
 php
-Copy
-Edit
+
 // Final Class Example
 final class ParentClass {
     public function show() {
@@ -843,7 +835,7 @@ Email client ya browser ko update rakhna chahiye taaki latest security patches l
 Backup Emails
 Important emails ka backup rakhna chahiye taaki data loss na ho.
 
-# File Handling in PHP - Hinglish Explanation
+# File Handling in PHP - 
 
 ---
 
@@ -855,7 +847,7 @@ File handling ka matlab hai program ke through files ko **create, open, read, wr
 
 ## PHP me File Handling ke basic steps:
 
-1. **File Open karna**  
+1. **File Open karna**
    File ko access karne ke liye sabse pehle usse open karna padta hai. PHP me `fopen()` function se file open karte hain. Isme do cheezein chahiye: file ka naam aur mode (jaise read, write, append).
 
    ```php
@@ -864,24 +856,21 @@ File Read karna
 File ke andar ka data padhna ho to fread() ya fgets() function use karte hain.
 
 php
-Copy
-Edit
+
 $content = fread($file, filesize("example.txt"));
 echo $content;
 File Write karna
 File me data likhna ho to fwrite() function ka use karte hain.
 
 php
-Copy
-Edit
+
 $file = fopen("example.txt", "w");  // "w" mode se file open karte hain write ke liye
 fwrite($file, "Yeh naya data hai file me.");
 File Close karna
 Jab file ke sath kaam khatam ho jaye to use close karna zaroori hota hai taaki resources free ho jayein. fclose() se file close karte hain.
 
 php
-Copy
-Edit
+
 fclose($file);
 File Modes (fopen ke liye):
 "r": Read-only mode (file exist karni chahiye)
@@ -896,8 +885,7 @@ File Modes (fopen ke liye):
 
 Simple Example: File me likhna aur padhna
 php
-Copy
-Edit
+
 // File open karte hain write mode me
 $file = fopen("data.txt", "w");
 
@@ -923,7 +911,7 @@ Large files ko read karte waqt memory ka dhyan rakho, pura file ek baar me padhn
 
 File ke permissions bhi sahi hone chahiye warna file open nahi hogi.
 
-# Handling Emails in PHP - Hinglish Explanation
+# Handling Emails in PHP - 
 
 ---
 
@@ -946,8 +934,7 @@ parameters: Optional command line parameters.
 
 Simple Example:
 php
-Copy
-Edit
+
 $to = "example@gmail.com";
 $subject = "Test Email";
 $message = "Hello, ye test email hai.";
@@ -971,8 +958,7 @@ Data clean rahe.
 
 Validation ke liye PHP me commonly filter_var() function use hota hai:
 php
-Copy
-Edit
+
 $email = "user@example.com";
 
 if(filter_var($email, FILTER_VALIDATE_EMAIL)){
@@ -981,7 +967,7 @@ if(filter_var($email, FILTER_VALIDATE_EMAIL)){
     echo "Invalid Email";
 }
 
-# Handling Emails in PHP - Simple Hinglish Explanation
+# Handling Emails in PHP -  
 
 ---
 
@@ -1003,8 +989,7 @@ headers: Extra information jaise "From" (kaun bhej raha hai), "Reply-To" (reply 
 
 Example:
 php
-Copy
-Edit
+
 $to = "friend@example.com";
 $subject = "Hello from PHP";
 $message = "Yeh ek test email hai.";
@@ -1032,8 +1017,7 @@ Email Validation ka Example:
 PHP me email check karne ke liye filter_var() function use hota hai:
 
 php
-Copy
-Edit
+
 $email = "user@example.com";
 
 if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -1050,7 +1034,7 @@ Email address ko bhejne se pehle validate karna zaroori hota hai.
 
 Validation se aapke email system ki reliability badhti hai aur errors kam hote hain.
 
-# MVC Architecture – Hinglish Explanation
+# MVC Architecture – 
 
 ---
 
@@ -1062,42 +1046,42 @@ Validation se aapke email system ki reliability badhti hai aur errors kam hote h
 
 ## 🧩 MVC ke 3 parts:
 
-1. **Model**  
-   - Ye data aur business logic ko handle karta hai.  
+1. **Model**
+   - Ye data aur business logic ko handle karta hai.
    - Database se data leta hai, update karta hai, aur application ki main calculations yahi karta hai.
 
-2. **View**  
-   - Ye user interface ko handle karta hai, yani jo user ko dikhai deta hai.  
+2. **View**
+   - Ye user interface ko handle karta hai, yani jo user ko dikhai deta hai.
    - HTML, CSS, aur frontend display yahi hota hai.
 
-3. **Controller**  
-   - Ye Model aur View ke beech mediator ka kaam karta hai.  
+3. **Controller**
+   - Ye Model aur View ke beech mediator ka kaam karta hai.
    - User ke request leta hai, Model se data leta hai, aur View ko data bhej kar dikhata hai.
 
 ---
 
 ## 🛠️ MVC kaam kaise karta hai?
 
-- Jab user website pe koi action karta hai (jaise button click), to **Controller** ye request leta hai.  
-- Controller Model ko kehta hai data process karne ko.  
-- Model data se related kaam karta hai (jaise DB query).  
-- Model se data milne ke baad Controller View ko data bhejta hai.  
+- Jab user website pe koi action karta hai (jaise button click), to **Controller** ye request leta hai.
+- Controller Model ko kehta hai data process karne ko.
+- Model data se related kaam karta hai (jaise DB query).
+- Model se data milne ke baad Controller View ko data bhejta hai.
 - View user ko data dikhata hai.
 
 ---
 
 ## ✅ MVC ke advantages:
 
-- **Code Separation:** Model, View, Controller alag-alag hone se code clean aur manageable hota hai.  
-- **Reusability:** Models aur Views ko alag se reuse kar sakte hain.  
-- **Easy Maintenance:** Agar kisi ek part me change karna ho, to baaki parts affect nahi hote.  
-- **Team Work:** Developers alag-alag parts pe ek saath kaam kar sakte hain.  
+- **Code Separation:** Model, View, Controller alag-alag hone se code clean aur manageable hota hai.
+- **Reusability:** Models aur Views ko alag se reuse kar sakte hain.
+- **Easy Maintenance:** Agar kisi ek part me change karna ho, to baaki parts affect nahi hote.
+- **Team Work:** Developers alag-alag parts pe ek saath kaam kar sakte hain.
 - **Better Organization:** Large applications ke liye best structure hota hai.
 
 ---
 
 
-✅ PHP and MySQL Connection – Hinglish Explanation
+✅ PHP and MySQL Connection – 
 🔷 What is the purpose of connecting PHP to MySQL?
 Jab hum dynamic website banate hain (like login, signup, add products), hume data ko store, retrieve, aur update karne ke liye database ki zarurat padti hai.
 
@@ -1108,8 +1092,7 @@ PHP ko MySQL se connect karne ke liye hum mysqli ya PDO ka use karte hain.
 🔹 Method 1: MySQLi (MySQL Improved)
 ➤ Syntax:
 php
-Copy
-Edit
+
 <?php
 $host = "localhost";
 $username = "root";
@@ -1135,8 +1118,7 @@ Supports object-oriented and procedural style
 🔹 Method 2: PDO (PHP Data Objects)
 ➤ Syntax:
 php
-Copy
-Edit
+
 <?php
 $host = "localhost";
 $dbname = "mydatabase";
@@ -1166,7 +1148,7 @@ Syntax style	Procedural + OOP	OOP only
 Security	Secure	More secure
 Flexibility	Less flexible	Highly flexible
 
-📘 SQL Injection – Theory (Hinglish Explanation)
+📘 SQL Injection – Theory ()
 🔹 SQL Injection kya hota hai?
 SQL Injection ek security vulnerability (suraksha ki kamzori) hoti hai jo tab hoti hai jab user ka input direct SQL query ke andar daal diya jaata hai bina verify kare.
 
@@ -1174,8 +1156,7 @@ Agar hum input ko sahi se sanitize ya validate nahi karte, to attacker SQL query
 
 🔹 Example se samjhiye:
 php
-Copy
-Edit
+
 $username = $_POST['username'];
 $password = $_POST['password'];
 
@@ -1183,15 +1164,13 @@ $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$passwo
 Agar koi attacker input me ye daal de:
 
 text
-Copy
-Edit
-Username: admin  
+
+Username: admin
 Password: ' OR '1'='1
 To query banegi:
 
 sql
-Copy
-Edit
+
 SELECT * FROM users WHERE username = 'admin' AND password = '' OR '1'='1';
 Iska matlab hota hai:
 admin ka password kuch bhi ho, '1'='1' hamesha true hoga, to attacker bina sahi password ke login ho jayega.
@@ -1218,8 +1197,7 @@ admin ka password kuch bhi ho, '1'='1' hamesha true hoga, to attacker bina sahi 
 
 🔹 Secure Example (Prepared Statement with MySQLi):
 php
-Copy
-Edit
+
 $stmt = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ?");
 $stmt->bind_param("ss", $username, $password);
 $stmt->execute();
@@ -1234,8 +1212,7 @@ PHP me try-catch block use karke hum exceptions ko catch kar sakte hain.
 
 2. Try-Catch Block ka basic structure
 php
-Copy
-Edit
+
 try {
     // Yeh code aapko try karna hai, jahan error aa sakta hai
 } catch (Exception $e) {
@@ -1248,8 +1225,7 @@ Database connect karte waqt agar connection fail ho jata hai to exception throw 
 Hum try block me connection code rakhenge, aur catch me error message show karenge.
 
 php
-Copy
-Edit
+
 try {
     $conn = new PDO("mysql:host=localhost;dbname=testdb", "root", "");
     // PDO error mode exception pe set karenge, taaki errors exception banein
@@ -1262,14 +1238,13 @@ try {
 Query chalate waqt bhi errors aa sakte hain. Unhe bhi try-catch me handle karenge.
 
 php
-Copy
-Edit
+
 try {
     $sql = "SELECT * FROM users";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $result = $stmt->fetchAll();
-    
+
     foreach($result as $row) {
         echo $row['username'] . "<br>";
     }
@@ -1278,8 +1253,7 @@ try {
 }
 5. Complete example: Connection + Query dono ke liye try-catch
 php
-Copy
-Edit
+
 try {
     $conn = new PDO("mysql:host=localhost;dbname=testdb", "root", "");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -1325,8 +1299,7 @@ Password mein numbers, capital letters hain ya nahi
 
 Example: Registration Form Validation Using Regex (PHP mein)
 php
-Copy
-Edit
+
 <?php
 // Server-side validation example
 
@@ -1359,3 +1332,4 @@ Jab form submit hota hai, server check karta hai ki email ka format sahi hai ya 
 Password mein kam se kam 8 characters hone chahiye, ek capital letter hona chahiye aur ek number bhi hona chahiye.
 
 Agar input sahi hai to aage badh jaata hai, warna error message dikhata hai.
+````
