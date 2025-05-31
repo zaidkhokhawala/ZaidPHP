@@ -1,4 +1,4 @@
-🔷 1. Payment Gateway Integration – Concept & Importance (Hinglish Explanation)
+🔷 1. Payment Gateway Integration – Concept & Importance 
 🔹 What is a Payment Gateway?
 Payment Gateway ek software service hoti hai jo aapke e-commerce website ya app ko online payment receive karne mein help karti hai.
 
@@ -20,7 +20,7 @@ Aapki website din-raat kabhi bhi payment accept kar sakti hai.
 ✅ Trust Build Karta Hai
 Jab trusted payment gateway hota hai (jaise Razorpay, PayPal), to customer aapke website pe trust karta hai.
 
-# 💳 Payment Gateway Integration – Interview Q&A (Hinglish)
+# 💳 Payment Gateway Integration
 
 ---
 
@@ -99,7 +99,7 @@ Language preference kya hai
 Aur bhi kaafi important meta-information
 
 🔄 Types of Headers in API:
-Header Type	Explanation (Hinglish)
+Header Type	
 Content-Type	Ye batata hai ki data kis format mein bheja gaya hai (e.g., application/json)
 Authorization	Secure APIs me token ya API key bhejne ke liye use hota hai
 Accept	Client ko kis type ka response chahiye (e.g., application/json)
@@ -139,7 +139,7 @@ Agar aap Razorpay, Stripe, ya kisi payment API ka use kar rahe ho, to token ya A
 Agar aap bina Authorization header ke request bhejte ho, to aapko "401 Unauthorized" error milta hai.
 
 
-# 📘 API with Header – Interview Questions and Answers (Hinglish)
+# 📘 API with Header –
 
 ---
 
@@ -239,7 +239,7 @@ Edit
 Authorization: Bearer eyJhbGciOi...
 
 
-## 📘 API with Header – Extra Interview Q&A (Hinglish)
+## 📘 API with Header – 
 
 ---
 
@@ -452,7 +452,7 @@ SOAP ek strict XML-based protocol hai jo zyada secure aur reliable hota hai, par
 ---
  
 
-# SOAP aur REST APIs - Interview Questions & Answers (Hinglish)
+# SOAP aur REST APIs - 
 
 ---
 
@@ -627,7 +627,7 @@ REST simple, lightweight aur easy to use hota hai — mobile apps, web apps ke l
 
 SOAP zyada secure aur standardized hai — banking, finance systems jaha high security chahiye, waha use hota hai.
 
-🧩 RESTful Principles – Hinglish Explanation
+🧩 RESTful Principles 
 🔍 Objective:
 RESTful principles ka main goal hota hai APIs ko simple, fast, and scalable banana. Ye principles follow karne se APIs maintain karna easy ho jaata hai aur doosre systems ke saath integrate bhi easily hota hai.
 
@@ -848,7 +848,7 @@ API requests mostly GET method se hoti hain.
 
 Response format usually JSON hota hai, jisse easily process kiya ja sakta hai.
 
-📍 Google Maps Geocoding API – Hinglish Explanation
+📍 Google Maps Geocoding API 
 🎯 Objective:
 Google Maps Geocoding API ka use location-related services ke liye kiya jata hai — jaise address se coordinates (latitude, longitude) nikalna ya coordinates se address dhoondhna. Yeh location-based apps ke liye kaafi useful hoti hai.
 
@@ -895,7 +895,7 @@ Travel apps (e.g., OYO, Ola)
 Weather apps with current location
 
 ❓ Q1: What is geocoding, and how does it work with the Google Maps API?
-🟢 Answer (Hinglish):
+🟢 Answer 
 Geocoding ka matlab hota hai kisi address ya place name ko latitude aur longitude coordinates mein convert karna.
 
 Google Maps Geocoding API ka use karke hum address input dete hain, aur API hume us jagah ka exact location (coordinates) return karti hai.
@@ -921,7 +921,7 @@ Location details (city, state, country, etc.)
 Yeh system real-time location-based features banane ke liye kaafi useful hai.
 
 ❓ Q2: Discuss the potential applications of the Google Maps Geocoding API in web applications.
-🟢 Answer (Hinglish):
+🟢 Answer :
 Google Maps Geocoding API ka use kai tarah ke web applications mein hota hai jahan location data important hota hai.
 
 🔸 Common Applications:
