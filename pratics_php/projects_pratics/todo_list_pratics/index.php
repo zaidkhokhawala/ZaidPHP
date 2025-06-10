@@ -5,7 +5,7 @@
         <div class="col-lg-6 col-md-8 col-sm-10">
             <div class="card shadow-lg border-0 rounded-3">
                 <div class="card-body">
-                    <h4 class="text-center mb-4">Add New Project</h4>
+                    <h4 class="text-center mb-4">Add New Task</h4>
                     <form id="contact-form" action="index" method="post">
                         <div class="mb-3">
                             <label for="name" class="form-label">Your Name</label>

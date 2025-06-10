@@ -10,7 +10,7 @@
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Task</th>
+                <th>Project Name</th>
                 <th>action</th>
             </tr>
         </thead>
@@ -20,15 +20,10 @@
                     <td><?php echo $row['id'];  ?></td>
                     <td><?php echo  $row['name']; ?></td>
                     <td><?php echo $row['project_name']; ?></td>
-                    <td><a href="delete?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this?')"
-                            class="btn btn-danger btn-sm">Delete</a>
-                      
-
-
-
-
-                        <a href="edit_project?id=<?php echo $row['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
-
+                    <td><a href="delete?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm">Delete</a>
+                        
+                    <a href="edit_project?id=<?php echo $row['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
+                    <a href="task_table?project_id=<?= $row['id'] ?>">View Tasks</a>
                     </td>
                 </tr>
             <?php } ?>
