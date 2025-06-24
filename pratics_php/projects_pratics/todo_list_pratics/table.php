@@ -7,22 +7,27 @@
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Task</th>
+                <th>Project Name</th>
                 <th>action</th>
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($Project_data as $d) { ?>
-            <tr>
-                <td><?php echo $d['id']; ?></td>
-                <td><?php echo $d['Name']; ?></td>
-                <td><?php echo $d['project_name']; ?></td>
-                <td><a href="delete?id=<?php echo $d['id']; ?>" class="btn btn-danger btn-sm">Delete</a>
-                    <a href="" class="btn btn-primary btn-sm">Edit</a>
-                </td>
-            </tr>
-                 <?php  } ?>
-    
+            <?php foreach ($all_data as $d) {
+
+            ?>
+                <tr>
+                    <td><?php echo $d['id']; ?></td>
+                    <td><?php echo $d['Name']; ?></td>
+                    <td><?php echo $d['project_name']; ?></td>
+                    <td><a href="delete?id=<?php echo $d['id']; ?>" class="btn btn-danger btn-sm">Delete</a>
+
+                        <a href="" class="btn btn-primary btn-sm">Edit</a>
+                    </td>
+                </tr>
+            <?php
+
+            } ?>
+
         </tbody>
     </table>
 </div>

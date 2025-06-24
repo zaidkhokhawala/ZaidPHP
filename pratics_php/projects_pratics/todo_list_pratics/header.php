@@ -31,7 +31,9 @@
          <div class="text-white fw-bold fs-5">
             <a href="table">Table</a>
         </div>
-
+ <div>
+            <a  class=" btn btn-sm btn-success">log in</a>
+        </div>
 
 
     </div>

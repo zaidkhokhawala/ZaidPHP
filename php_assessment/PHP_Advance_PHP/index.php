@@ -1,1 +1,0 @@
-<?php header('Location: view/bookingForm.php'); ?>
