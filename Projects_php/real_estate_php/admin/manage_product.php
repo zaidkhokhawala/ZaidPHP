@@ -18,7 +18,7 @@
                     <div class="card-header text-white bg-gradient rounded-3 p-3">
                         <div class="d-flex justify-content-between align-items-center">
                             <h4 class="m-0">🏡 Property Listings</h4>
-                            <a href="add_product.php" class="btn btn-success rounded-pill px-3">+ Add New Property</a>
+                            <a href="add_product" class="btn btn-success rounded-pill px-3">+ Add New Property</a>
                         </div>
                     </div>
 
@@ -26,45 +26,50 @@
                         <table class="table table-striped table-hover align-middle text-center border-0">
                             <thead class="table-dark">
                                 <tr>
-                                    <th>ID</th>
-                                    <th>Image</th>
+                                    <th>No.</th>
+
                                     <th>Category</th>
+                                    <th>Image</th>
+                                    <th>Property ID</th>
                                     <th>Price</th>
-                                    <th>Home No</th>
                                     <th>Area</th>
-                                    <th>City</th>
-                                    <th>Pincode</th>
-                                    <th>Bedrooms</th>
-                                    <th>Bathrooms</th>
+                                    <th>BHK</th>
                                     <th>Floor</th>
                                     <th>Parking</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
                             </thead>
-                            <tbody>  
-                                <?php foreach ($product_data as $P_data) { ?>
+                            <tbody>
+                                <?php
+                                $i = 1; // 🟢 Serial number counter
+                                foreach ($product_data as $P_data) {
+                                ?>
                                     <tr>
-                                        <td><?php echo $P_data['id']; ?></td>
+                                        <td><?= $i++; ?></td> <!-- Serial No. -->
 
-                                        <td><img src="../uploads/properties/<?php echo $P_data['image']; ?>" class="property-img" width="50"></td>
-                                        <td><?php echo $P_data['category_name']; ?></td>
-                                        <td>$ <?php echo $P_data['price']; ?></td>
-                                        <td><?php echo $P_data['home_number']; ?></td>
-                                        <td><?php echo $P_data['area']; ?> sqft</td>
-                                        <td><?php echo $P_data['city']; ?></td>
-                                        <td><?php echo $P_data['pincode']; ?></td>
-                                        <td><?php echo $P_data['bedrooms']; ?></td>
-                                        <td><?php echo $P_data['bathrooms']; ?></td>
-                                        <td><?php echo $P_data['floor']; ?></td>
-                                        <td><?php echo $P_data['parking']; ?></td>
+
+                                        <td><?= $P_data['category_name']; ?></td>
+
                                         <td>
-                                            <a href="#" class="btn btn-outline-primary btn-sm px-3 rounded-pill">
+                                            <img src="../uploads/properties/<?= $P_data['image']; ?>" width="60" height="60" style="object-fit: cover; border-radius: 5px;">
+                                        </td>
+
+                                        <td><?= $P_data['id']; ?></td>
+                                        <td>$ <?= number_format($P_data['price']); ?></td>
+                                        <td><?= $P_data['area']; ?> m²</td>
+                                        <td><?= $P_data['bhk']; ?> BHK</td>
+                                        <td><?= $P_data['floor']; ?></td>
+                                        <td><?= $P_data['parking']; ?></td>
+
+                                        <td>
+                                            <a href="edit_product?id=<?= $P_data['id']; ?>" class="btn btn-outline-primary btn-sm px-3 rounded-pill">
                                                 <i class="fas fa-edit"></i> Edit
                                             </a>
                                         </td>
                                         <td>
-                                            <a href="#" class="btn btn-outline-danger btn-sm px-3 rounded-pill">
+                                            <a href="delete_product?id=<?= $P_data['id']; ?>" class="btn btn-outline-danger btn-sm px-3 rounded-pill"
+                                                onclick="return confirm('Are you sure you want to delete this property?');">
                                                 <i class="fas fa-trash-alt"></i> Delete
                                             </a>
                                         </td>
@@ -78,15 +83,5 @@
         </div>
     </div>
 </div>
-
-
-<!-- Custom Styling -->
-<style>
-   
-
-   
-</style>
-
-
 
 <?php include_once('footer.php') ?>

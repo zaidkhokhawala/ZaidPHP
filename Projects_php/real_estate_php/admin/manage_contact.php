@@ -28,7 +28,7 @@
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Message</th>
-                                    <th>Delete</th>
+                                    <th>Done</th>
                                 </tr>
                             </thead>
                             <tbody>  
@@ -44,7 +44,7 @@
                                         <td>
                                             <a href=""
                                                class="btn btn-outline-danger btn-sm px-3 rounded-pill">
-                                                <i class="fas fa-trash-alt"></i> Delete
+                                                <i class="fas fa-trash-alt"></i> Done
                                             </a>
                                         </td>
                                     </tr>

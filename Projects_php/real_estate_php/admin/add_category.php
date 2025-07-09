@@ -25,13 +25,7 @@
                         </div>
 
                         <!-- Category Image -->
-                        <div class="mb-3">
-                            <label for="category_image" class="form-label">Upload Category Image</label>
-                            <input type="file" name="img" id="category_image" class="form-control" required>
-                        </div>
-
-                        <!-- Image Preview -->
-                        <div id="image-preview" class="mb-3"></div>
+              
 
                         <!-- Submit Button -->
                         <div class="text-center">

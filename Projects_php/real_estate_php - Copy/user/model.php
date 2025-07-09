@@ -9,7 +9,7 @@ public $conn;
 function __construct()
 {
    
-    $this->conn = new Mysqli('localhost', 'root', '', 'real_estate');  
+    $this->conn = new Mysqli('localhost', 'zaid', 'Zaid7474', 'real_estate');  
     // step  1.2 ✅ Mysqli() ek built-in function hai jo MySQL database se connect karne ke liye use hota hai
     // "localhost" -> Server name, "root" -> Username, "" -> Password (empty), "store" -> Database name
     // Agar connection successfully establish ho jaye to $this->conn variable me store ho jayega

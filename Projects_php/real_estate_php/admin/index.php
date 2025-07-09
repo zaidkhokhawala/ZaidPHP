@@ -1,90 +1,116 @@
-<?php include_once('header.php'); ?>
-<div class="dashboard-container">
-        <h1 class="dashboard-title">Dashboard Overview</h1>
-        
-        <div class="dashboard-cards">
-            <div class="dashboard-card">
-                <i class="fas fa-users"></i>
-                <h3>Total Users</h3>
-                <p>1,250</p>
-            </div>
-            <div class="dashboard-card">
-                <i class="fas fa-shopping-cart"></i>
-                <h3>Orders</h3>
-                <p>350</p>
-            </div>
-            <div class="dashboard-card">
-                <i class="fas fa-dollar-sign"></i>
-                <h3>Revenue</h3>
-                <p>$25,000</p>
-            </div>
-            <div class="dashboard-card">
-                <i class="fas fa-bell"></i>
-                <h3>New Notifications</h3>
-                <p>12</p>
-            </div>
-        </div>
-        
-        <div class="progress-section">
-            <h2 class="progress-title">Sales Progress</h2>
-            <div class="progress">
-                <div class="progress-bar" style="width: 75%; background-color: #f35525;">75%</div>
-            </div>
-        </div>
-        
-        <div class="table-section">
-            <h2 class="table-title">Recent Orders</h2>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Order ID</th>
-                        <th>Customer</th>
-                        <th>Amount</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>#1023</td>
-                        <td>John Doe</td>
-                        <td>$150</td>
-                        <td>Completed</td>
-                    </tr>
-                    <tr>
-                        <td>#1024</td>
-                        <td>Jane Smith</td>
-                        <td>$200</td>
-                        <td>Pending</td>
-                    </tr>
-                    <tr>
-                        <td>#1025</td>
-                        <td>Michael Brown</td>
-                        <td>$180</td>
-                        <td>Shipped</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <div class="d-flex flex-row">
-            <div style="flex: 1; max-width: 50%; display: flex; flex-direction: column;">
-                <div class="task-section">
-                    <h2 class="task-title">Pending Tasks</h2>
-                    <ul class="task-list">
-                        <li><i class="fas fa-check-circle" style="color: #f35525;"></i> Update product inventory</li>
-                        <li><i class="fas fa-check-circle" style="color: #f35525;"></i> Respond to customer queries</li>
-                        <li><i class="fas fa-check-circle" style="color: #f35525;"></i> Schedule marketing campaign</li>
-                    </ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Villa Agency - Real Estate HTML5 Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../user/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../user/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../user/assets/css/templatemo-villa-agency.css">
+    <link rel="stylesheet" href="../user/assets/css/owl.css">
+    <link rel="stylesheet" href="../user/assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./ad_assets/style.css">
+    <!--
+
+
+-->
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="contact-page section">
+        <div class="container">
+            <div class="row">
+
+
+
+                <div class="col-lg-6 mx-auto">
+
+                    <form id="contact-form" action="" method="post">
+                        <div class="">
+                            <div class="card-body">
+                                <h3 class="text-center mb-4 text-uppercase fw-bold text-dark">Admin Login</h3>
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" name="username" id="username" class="form-control rounded-pill px-4 py-2" placeholder="Enter your username..." required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control rounded-pill px-4 py-2" placeholder="Enter your password..." required>
+                                </div>
+                                <div class="text-center">
+                                    <div class="col-lg-12 text-center">
+                                        <fieldset>
+                                            <button type="submit" name="submit" id="form-submit" class="orange-button w-50 mx-auto">Log In</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </form>
+
                 </div>
-                
-                <div class="analytics-section">
-                    <h2 class="analytics-title">Performance Analytics</h2>
-                    <p><strong>Conversion Rate:</strong> 4.5%</p>
-                    <p><strong>Bounce Rate:</strong> 32%</p>
-                    <p><strong>Average Session Duration:</strong> 3m 45s</p>
-                </div>
+
+
+
+
+
+
+
+
+
+
             </div>
         </div>
     </div>
 
-<?php include_once('footer.php'); ?>
+
+
+
+
+
+
+
+
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="../user/vendor/jquery/jquery.min.js"></script>
+    <script src="../user/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../user/assets/js/isotope.min.js"></script>
+    <script src="../user/assets/js/owl-carousel.js"></script>
+    <script src="../user/assets/js/counter.js"></script>
+    <script src="../user/assets/js/custom.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

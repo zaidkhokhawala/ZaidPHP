@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M - India | Fashion and Quality Clothing at the Best Price</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .top-bar {
+            background-color: #f5f5f5;
+            padding: 8px 0;
+            font-size: 12px;
+            text-align: center;
+        }
+        
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+        
+        .logo {
+            width: 60px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+        
+        .nav-links a {
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .user-actions {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .search-bar {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        
+        .search-bar input {
+            border: none;
+            outline: none;
+            padding: 5px;
+            width: 150px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 80vh;
+            background-image: url('https://via.placeholder.com/1920x800');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-content {
+            background-color: rgba(255,255,255,0.9);
+            padding: 40px;
+            margin-left: 10%;
+            max-width: 400px;
+        }
+        
+        .hero-content h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-content p {
+            margin-bottom: 25px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #000;
+            color: white;
+            padding: 12px 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+        
+        /* Categories Section */
+        .categories {
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        
+        .category-card {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+        
+        .category-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .category-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .category-label {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            background-color: rgba(255,255,255,0.8);
+            padding: 10px;
+            font-weight: bold;
+        }
+        
+        /* Newsletter Section */
+        .newsletter {
+            background-color: #f9f9f9;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .newsletter p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 15px;
+            border: 1px solid #ddd;
+            outline: none;
+        }
+        
+        .newsletter-form button {
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 0 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 60px 40px 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #ccc;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            Free shipping on orders over ₹3999 | Sign up for newsletter and get 10% off
+        </div>
+        <div class="main-header">
+            <nav class="nav-links">
+                 <a href="#" class="logo">
+                <img src="./img/logo.png" style="" alt="H&M Logo">
+            </a>
+                <a href="#">Women</a>
+                <a href="#">Men</a>
+                <a href="#">Divided</a>
+                <a href="#">Kids</a>
+                <a href="#">H&M HOME</a>
+                <a href="#">Sale</a>
+                <a href="#">Sustainability</a>
+            </nav>
+           
+            <div class="user-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+                <a href="#">Sign in</a>
+                <a href="#">Favorites</a>
+                <a href="#">Shopping bag (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Summer Collection 2023</h1>
+                <p>Discover our new arrivals with fresh colors and lightweight fabrics perfect for the season.</p>
+                <a href="#" class="cta-button">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/300x400" alt="Women's Clothing">
+                    <div class="category-label">Women</div>
+                </div>
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/300x400" alt="Men's Clothing">
+                    <div class="category-label">Men</div>
+                </div>
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/300x400" alt="Kids' Clothing">
+                    <div class="category-label">Kids</div>
+                </div>
+                <div class="category-card">
+                    <img src="https://via.placeholder.com/300x400" alt="Home Decor">
+                    <div class="category-label">H&M HOME</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2 class="section-title">Sign Up for Newsletter</h2>
+            <p>Get exclusive offers, styling tips and updates on new arrivals straight to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">H&M HOME</a></li>
+                    <li><a href="#">Divided</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Corporate Info</h3>
+                <ul>
+                    <li><a href="#">Career at H&M</a></li>
+                    <li><a href="#">About H&M group</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Find a Store</a></li>
+                    <li><a href="#">Legal & Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><img src="https://via.placeholder.com/24" alt="Facebook"></a>
+                    <a href="#"><img src="https://via.placeholder.com/24" alt="Instagram"></a>
+                    <a href="#"><img src="https://via.placeholder.com/24" alt="Twitter"></a>
+                    <a href="#"><img src="https://via.placeholder.com/24" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2023 H&M Hennes & Mauritz AB. All rights reserved.</div>
+            <div>India | English</div>
+        </div>
+    </footer>
+</body>
+</html>
