@@ -1,6 +1,6 @@
 # 🏡 Real Estate Portal - Admin & User Panel
 
-This is a simple real estate website with both **Admin** and **User** panels built using **PHP & MySQL (Core PHP)**.
+This is a simple real estate website with both **Admin** and **User** panels built using **PHP & MySQL (PHP)**.
 
 ---
 
